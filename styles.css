@@ -126,3 +126,280 @@ html {
   text-align: center;
   padding: 1rem;
 }
+
+
+/* ==============================
+   HERO - SECCIÓN PRINCIPAL
+============================== */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 440px;
+  padding: 6rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255,255,255,0.65), transparent 25%),
+    radial-gradient(circle at 85% 80%, rgba(255,255,255,0.45), transparent 25%),
+    linear-gradient(135deg, #e8f5e9, #b9e4bd, #81c784);
+}
+
+.hero-contenido {
+  max-width: 850px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-etiqueta {
+  display: inline-block;
+  padding: 0.45rem 1rem;
+  margin-bottom: 1.2rem;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.75);
+  color: #2e7d32;
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.hero h2 {
+  color: #1b5e20;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  text-shadow: 0 2px 2px rgba(255, 255, 255, 0.4);
+}
+
+.hero-eslogan {
+  max-width: 650px;
+  margin: 0 auto 2rem;
+  color: #355b38;
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+.boton {
+  display: inline-block;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 0.9rem 1.8rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 5px 12px rgba(27, 94, 32, 0.25);
+  transition: background-color 0.3s ease,
+              transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #1b5e20;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(27, 94, 32, 0.35);
+}
+
+.boton-hero {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+}
+
+.hero-mensaje {
+  margin-top: 1.8rem;
+  color: #336638;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+
+/* ==============================
+   VISÍTANOS
+============================== */
+
+.visita {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #f1f8e9, #ffffff);
+  border: 1px solid #dcebd5;
+  border-radius: 24px;
+  box-shadow: 0 8px 25px rgba(46, 125, 50, 0.08);
+}
+
+.visita-encabezado {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+}
+
+.visita-etiqueta {
+  color: #558b2f;
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.visita-encabezado h2 {
+  color: #2e7d32;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 0.5rem 0 1rem;
+}
+
+.visita-encabezado p {
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.visita-contenido {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.visita-datos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.visita-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 14px;
+  border: 1px solid #e1eadc;
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.visita-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(46, 125, 50, 0.1);
+}
+
+.visita-icono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  background-color: #e8f5e9;
+  font-size: 1.6rem;
+}
+
+.visita-item h3 {
+  color: #2e7d32;
+  margin-bottom: 0.3rem;
+  font-size: 1.05rem;
+}
+
+.visita-item p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.boton-visita {
+  align-self: flex-start;
+  margin-top: 0.3rem;
+}
+
+.visita-mapa {
+  display: flex;
+  min-height: 350px;
+  border-radius: 18px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.7), transparent 20%),
+    radial-gradient(circle at 80% 70%, rgba(255,255,255,0.6), transparent 25%),
+    linear-gradient(135deg, #c8e6c9, #a5d6a7, #dcedc8);
+}
+
+.mapa-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+}
+
+.mapa-placeholder > span {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.mapa-placeholder h3 {
+  color: #1b5e20;
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.mapa-placeholder p {
+  max-width: 300px;
+  color: #355b38;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+.mapa-placeholder a {
+  display: inline-block;
+  color: #1b5e20;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.7rem 1.2rem;
+  border: 2px solid #2e7d32;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.mapa-placeholder a:hover {
+  color: white;
+  background-color: #2e7d32;
+}
+
+
+/* ==============================
+   DISEÑO RESPONSIVO
+============================== */
+
+@media (max-width: 700px) {
+  .hero {
+    min-height: 380px;
+    padding: 4rem 1.2rem;
+  }
+
+  .hero-eslogan {
+    font-size: 1rem;
+  }
+
+  .visita {
+    margin: 1rem;
+    padding: 2rem 1rem;
+  }
+
+  .visita-contenido {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .visita-mapa {
+    min-height: 280px;
+  }
+}
+
+
