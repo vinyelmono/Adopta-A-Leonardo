@@ -11,7 +11,7 @@
   <header class="encabezado">
     <h1 class="logo">🐾 Adopta una Mascota</h1>
     <nav class="menu">
-      <a href="#inicio">Inicio</a>
+      <a href="#inicio" class="activo">Inicio</a>
       <a href="#nosotros">Nosotros</a>
       <a href="#adopta">Adóptame</a>
       <a href="#visita">Visítanos</a>
@@ -87,5 +87,26 @@
     <p>© 2026 Adopta una Mascota — Proyecto escolar</p>
     <p>Facebook | Instagram | X</p>
   </footer>
+
+
+
+
+    <script>
+    // Marca como "activo" el enlace de la sección visible
+    const enlaces = document.querySelectorAll('.menu a');
+    const secciones = document.querySelectorAll('main section[id]');
+
+    const observador = new IntersectionObserver((entradas) => {
+      entradas.forEach((entrada) => {
+        if (entrada.isIntersecting) {
+          enlaces.forEach((a) => {
+            a.classList.toggle('activo', a.getAttribute('href') === '#' + entrada.target.id);
+          });
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+
+    secciones.forEach((s) => observador.observe(s));
+  </script>
 </body>
 </html>
