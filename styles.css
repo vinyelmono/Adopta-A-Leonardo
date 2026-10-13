@@ -105,6 +105,21 @@ html {
   padding: 1rem;
   width: 200px;
   text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.tarjeta img {
+  width: 100%;
+  border-radius: 8px;
 }
 
 /* Formulario */
@@ -117,6 +132,20 @@ html {
 .formulario textarea {
   width: 100%;
   padding: 0.4rem;
+}
+
+.valores {
+  list-style-position: inside;
+  text-align: center;
+  justify-content: center;
+  padding-left: 0;
+  margin: 15px 0;
+}
+
+.valores li {
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 5px;
 }
 
 /* Pie de página */
