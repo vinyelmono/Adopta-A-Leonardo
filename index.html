@@ -21,11 +21,27 @@
 
   <main>
     <!-- Sección principal (hero) -->
-    <section id="inicio" class="hero">
-      <h2>Dales una segunda oportunidad</h2>
-      <p>Encuentra a tu nuevo mejor amigo en nuestro refugio.</p>
-      <button class="boton">Quiero adoptar</button>
-    </section>
+    ```html
+<!-- Sección principal (hero) -->
+<section id="inicio" class="hero">
+  <div class="hero-contenido">
+    <span class="hero-etiqueta">🐾 REFUGIO DE ANIMALES</span>
+
+    <h2>Dales una segunda oportunidad</h2>
+
+    <p class="hero-eslogan">
+      Un hogar cambia sus vidas, y ellos pueden cambiar la tuya.
+      Encuentra a tu nuevo mejor amigo y regálale una historia llena de amor.
+    </p>
+
+    <a href="#adopta" class="boton boton-hero">🐶 Quiero adoptar</a>
+
+    <div class="hero-mensaje">
+      ❤️ Adopta, no compres. ¡Cambia una vida!
+    </div>
+  </div>
+</section>
+```
 
     <!-- Sección sobre nosotros -->
     <section id="nosotros" class="seccion">
@@ -62,11 +78,72 @@
     </section>
 
     <!-- Sección visítanos -->
-    <section id="visita" class="seccion">
-      <h2>Visítanos</h2>
-      <p><strong>Dirección:</strong> Calle de los Animalitos #123, Ciudad.</p>
-      <p><strong>Horario:</strong> Lunes a sábado, 10:00 a 17:00 hrs.</p>
-    </section>
+    ```html
+<!-- Sección visítanos -->
+<section id="visita" class="seccion visita">
+  <div class="visita-encabezado">
+    <span class="visita-etiqueta">📍 VEN A CONOCERNOS</span>
+    <h2>¡Te esperamos!</h2>
+    <p>
+      Ven a conocer a nuestros peluditos y descubre quién puede
+      convertirse en tu próximo mejor amigo.
+    </p>
+  </div>
+
+  <div class="visita-contenido">
+    <div class="visita-datos">
+      <div class="visita-item">
+        <span class="visita-icono">🏠</span>
+        <div>
+          <h3>Nuestra ubicación</h3>
+          <p>Calle de los Animalitos #123, Ciudad.</p>
+        </div>
+      </div>
+
+      <div class="visita-item">
+        <span class="visita-icono">🕒</span>
+        <div>
+          <h3>Horario de atención</h3>
+          <p>Lunes a sábado</p>
+          <p>10:00 a 17:00 hrs.</p>
+        </div>
+      </div>
+
+      <div class="visita-item">
+        <span class="visita-icono">🐾</span>
+        <div>
+          <h3>¿Qué puedes hacer?</h3>
+          <p>Conocer a las mascotas, convivir con ellas y comenzar tu proceso de adopción.</p>
+        </div>
+      </div>
+
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=Calle+de+los+Animalitos+123"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="boton boton-visita"
+      >
+        📍 Cómo llegar
+      </a>
+    </div>
+
+    <div class="visita-mapa">
+      <div class="mapa-placeholder">
+        <span>🗺️</span>
+        <h3>¡Ven a visitarnos!</h3>
+        <p>Estamos listos para ayudarte a encontrar a tu compañero ideal.</p>
+        <a
+          href="https://www.google.com/maps"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Abrir Google Maps ↗
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+```
 
     <!-- Sección contacto -->
     <section id="contacto" class="seccion">
