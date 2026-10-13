@@ -82,10 +82,32 @@ body {
   padding: 0.4rem;
 }
 
+.formulario textarea{
+  height: 8rem;
+}
 /* Pie de página */
 .pie {
   background-color: #333;
   color: white;
   text-align: center;
   padding: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .encabezado {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .menu a {
+    margin: 0 0.5rem;
+  }
+
+  .tarjeta {
+    width: 100%;
+  }
 }
