@@ -56,6 +56,72 @@ No requiere instalación ni dependencias.
 2. Al terminar, se abre un *Pull Request* hacia `main`.
 3. Se revisan los cambios y se fusionan (*merge*) a `main`.
 
+## 💻 Comandos de Git
+
+### 1. Primera configuración (una sola vez por persona)
+
+| Comando | ¿Qué hace? |
+| --- | --- |
+| `git config --global user.name "Tu Nombre"` | Define cómo aparecerá tu nombre en los commits |
+| `git config --global user.email "tu@correo.com"` | Define el correo asociado a tus commits |
+
+### 2. Crear o copiar el repositorio
+
+| Comando | ¿Qué hace? |
+| --- | --- |
+| `git init` | Convierte la carpeta actual en un repositorio de Git |
+| `git clone <URL-del-repositorio>` | Copia un repositorio remoto a tu computadora |
+| `git remote add origin <URL>` | Conecta tu repositorio local a uno remoto |
+| `git remote -v` | Muestra a qué repositorios remotos está conectado |
+
+### 3. Trabajo diario (guardar mis cambios)
+
+| Comando | ¿Qué hace? |
+| --- | --- |
+| `git status` | Muestra el estado actual: archivos modificados, nuevos, en conflicto |
+| `git add <archivo>` | Prepara un archivo (o varios) para el commit |
+| `git add .` | Prepara todos los archivos modificados |
+| `git commit -m "mensaje"` | Guarda una versión («foto») de los cambios con un mensaje |
+| `git log --oneline` | Muestra el historial de commits (uno por línea) |
+| `git diff` | Muestra los cambios que aún no se han preparado |
+
+### 4. Ramas
+
+| Comando | ¿Qué hace? |
+| --- | --- |
+| `git branch` | Lista las ramas y marca en cuál estás |
+| `git branch <nombre>` | Crea una rama nueva (sin moverse a ella) |
+| `git checkout -b <nombre>` (o `git switch -c <nombre>`) | Crea una rama nueva y se cambia a ella |
+| `git checkout <rama>` (o `git switch <rama>`) | Se cambia a otra rama ya existente |
+| `git branch -d <rama>` | Elimina una rama ya integrada |
+
+### 5. Subir y bajar cambios (remoto)
+
+| Comando | ¿Qué hace? |
+| --- | --- |
+| `git push -u origin <rama>` | Sube la rama por primera vez y la conecta al remoto |
+| `git push` | Sube los commits siguientes de esa rama |
+| `git pull` | Baja los cambios de la rama remota y los integra a tu copia |
+
+### 6. Integrar ramas (merge)
+
+| Comando | ¿Qué hace? |
+| --- | --- |
+| `git checkout main` | Se cambia a la rama principal |
+| `git pull` | Asegura que `main` esté actualizada |
+| `git merge <rama>` | Integra los cambios de la rama en `main` |
+| `git log --graph --oneline` | Muestra el historial con las ramas como un gráfico |
+| `git log --graph --oneline --all` | Muestra el gráfico con todas las ramas (evidencia de la integración final) |
+
+### 7. Resolver conflictos
+
+| Comando | ¿Qué hace? |
+| --- | --- |
+| `git status` | Muestra qué archivos están en conflicto |
+| _(editar el archivo)_ | Se decide qué texto conservar |
+| `git add <archivo>` | Se confirma que el conflicto está resuelto |
+| `git commit -m "conflicto resuelto"` | Se guarda la solución |
+
 ## 🛠️ Tecnologías
 
 - HTML5
@@ -64,12 +130,11 @@ No requiere instalación ni dependencias.
 - Git y GitHub
 
 ## 👥 Autores
-KaroolTheMonoo
-leonardo-cruz12
-roberto3T
-pablof007289
 
-
+De la torre Bermudez Karol Steven (KaroolTheMonoo),
+Fuentes Lopez Pablo (pablof007289),
+Martinez De la cruz Leonardo (leonardo-cruz12),
+Rodriguez Ventura Roberto (roberto3T),
 ## 📄 Licencia
 
-MIT License.
+Proyecto con fines educativos.
